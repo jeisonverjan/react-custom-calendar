@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 65.5%;
+  font-family: "Anton", sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 100vh;
+  /* color: #000; */
+  padding-top: 2rem;
+}
+.container {
+  font-size: 2rem;
+  max-height: 500px;
+  padding: 0.5rem;
+}
+.month {
+  /* background-color: #ff1d58; */
+  text-transform: capitalize;
+  border-radius: 0em 1em 1em 0em;
+}
+
+.palets-color-box {
+  background-color: #f75990;
+  font-size: 1.2rem;
+  border-radius: 1em 0em 0em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.palets-item {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3em;
+}
+
+.palets-item input {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.sidebar-title{
+  letter-spacing: 0.2em;
+  padding: 0.2em;
+}
+
+.month-header {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.month-name {
+  min-width: 40%;
+  max-width: 40%;
+}
+
+.month-btns {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.3em;
+}
+.day-name span {
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+}
+.day {
+  display: grid;
+  place-content: center;
+  /* background-color: #00ddff; */
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+.day:hover {
+  opacity: 0.8;
+  background-color: #fff685;
+  scale: 1.1;
+}
+
+.current-day {
+  border: solid 0.1rem black;
+  box-shadow: 0.1em 0.2em #fff685;
+}
